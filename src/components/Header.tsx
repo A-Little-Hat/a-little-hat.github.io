@@ -1,4 +1,5 @@
 import { Center, Heading } from '@chakra-ui/react';
+import { Button } from "@chakra-ui/button";
 import { Stack, VStack, Flex, Box, Text } from '@chakra-ui/layout';
 import { useMediaQuery } from '@chakra-ui/media-query';
 import '../styles/header.css'
@@ -47,10 +48,13 @@ function Header() {
                     <Text ml="5" fontSize="6xl" fontWeight="bold" bgGradient="linear(to-r, red.300, blue.500, purple.600)" bgClip='text' >Myself Soumyaneel</Text>
                     <Box w={isNotSmallerScreen ? "600px" : ""} mx="3" >
                         <Text fontSize="2xl" fontWeight="semibold" fontFamily="monospace" >
-                                I'm just an ordinary programmer with tons and tons of bugs to fight. I like to build amazing websites. Learing new things and exploring new tech prods givs me more energy to work.
-                                <p style={{paddingTop:"20px"}}>
+                            I'm just an ordinary programmer with tons and tons of bugs to fight. I like to build amazing websites. Learing new things and exploring new tech prods givs me more energy to work.
+                            <p style={{ paddingTop: "20px" }}>
                                 I believe that <strong>ability is nothing without opportunity.</strong>  I always try to make myself better than I am.
-                                </p>
+                        <Button aria-label="CV" onClick={() =>
+                            window.open("https://drive.google.com/file/d/1NkyMJZv_qFmrTfY7PVW2eLBllTemWmKf/view?usp=sharing")
+                        } >Hire Me</Button>
+                            </p>
                         </Text>
                     </Box>
                 </Box>
