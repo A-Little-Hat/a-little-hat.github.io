@@ -1,0 +1,15 @@
+#statMain{
+    flex-direction: column;
+    justify-content: center;
+}
+#codetime{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+span{
+    margin-right: 10px;
+}
+hr{
+    margin-top: 10px;
+}
